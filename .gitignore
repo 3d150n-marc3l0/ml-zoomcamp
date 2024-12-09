@@ -5,7 +5,9 @@ debug.log
 08-deep-learning/.ipynb_checkpoints/
 
 
-09-serverless/model_2024_hairstyle.keras
-09-serverless/model_2024_hairstyle.tflite
+09-serverless/*.keras
+09-serverless/*.tflite
+09-serverless/*.json
+09-serverless/*.h5
 09-serverless/.ipynb_checkpoints/
 

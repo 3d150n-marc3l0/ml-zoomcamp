@@ -21,8 +21,6 @@ def prepare_image(img, target_size):
 tflite_model_path = 'model_2024_hairstyle_v2.tflite'
 target_size = (200, 200)
 
-# preprocessor = create_preprocessor('xception', target_size=target_size)
-
 interpreter = tflite.Interpreter(model_path=tflite_model_path)
 interpreter.allocate_tensors()
 
@@ -42,7 +40,6 @@ def prepare_image(img, target_size):
 
 
 def predict(url):
-    # X = preprocessor.from_url(url)
     image = download_image(url)
     image = prepare_image(image, target_size)
     
@@ -61,9 +58,6 @@ def predict(url):
 
 def lambda_handler(event, context):
     url = event['url']
-    print(f"URL: {url}")
     result = predict(url)
-    print(f"Result: {result}")
-    
     return result
     
