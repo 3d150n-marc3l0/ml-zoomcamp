@@ -11,3 +11,5 @@ debug.log
 09-serverless/*.h5
 09-serverless/.ipynb_checkpoints/
 
+10-kubernetes/machine-learning-zoomcamp/
+10-kubernetes/.ipynb_checkpoints/
